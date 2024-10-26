@@ -1,6 +1,6 @@
 {
   "name": "lmnsqz",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Unofficial TypeScript SDK for the Lemon Squeezy API",
   "repository": {
     "type": "git",
@@ -32,135 +32,94 @@
   },
   "exports": {
     ".": {
-      "import": "./index.mjs",
-      "require": "./index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
     "./checkout": {
-      "import": "./modules/checkout/index.mjs",
-      "require": "./modules/checkout/index.js"
+      "types": "./dist/modules/checkout.d.ts",
+      "import": "./dist/modules/checkout.mjs",
+      "require": "./dist/modules/checkout.js"
     },
     "./customer": {
-      "import": "./modules/customer/index.mjs",
-      "require": "./modules/customer/index.js"
+      "types": "./dist/modules/customer.d.ts",
+      "import": "./dist/modules/customer.mjs",
+      "require": "./dist/modules/customer.js"
     },
     "./client": {
-      "import": "./client/index.mjs",
-      "require": "./client/index.js"
+      "types":"./dist/client/index.d.ts",
+      "import": "./dist/client/index.mjs",
+      "require": "./dist/client/index.js"
     },
     "./discount": {
-      "import": "./modules/discount/index.mjs",
-      "require": "./modules/discount/index.js"
+      "types": "./dist/modules/discount.d.ts",
+      "import": "./dist/modules/discount.mjs",
+      "require": "./dist/modules/discount.js"
     },
     "./file": {
-      "import": "./modules/file/index.mjs",
-      "require": "./modules/file/index.js"
+      "types": "./dist/modules/file.d.ts",
+      "import": "./dist/modules/file.mjs",
+      "require": "./dist/modules/file.js"
     },
     "./licenseKey": {
-      "import": "./modules/licenseKey/index.mjs",
-      "require": "./modules/licenseKey/index.js"
+      "types": "./dist/modules/licenseKey.d.ts",
+      "import": "./dist/modules/licenseKey.mjs",
+      "require": "./dist/modules/licenseKey.js"
     },
     "./licenseKeyInstance": {
-      "import": "./modules/licenseKeyInstance/index.mjs",
-      "require": "./modules/licenseKeyInstance/index.js"
+      "types": "./dist/modules/licenseKeyInstance.d.ts",
+      "import": "./dist/modules/licenseKeyInstance.mjs",
+      "require": "./dist/modules/licenseKeyInstance.js"
     },
     "./modules": {
-      "import": "./modules/index.mjs",
-      "require": "./modules/index.js"
+      "types": "./dist/modules/index.d.ts",
+      "import": "./dist/modules/index.mjs",
+      "require": "./dist/modules/index.js"
     },
     "./order": {
-      "import": "./modules/order/index.mjs",
-      "require": "./modules/order/index.js"
+      "types": "./dist/modules/order.d.ts",
+      "import": "./dist/modules/order.mjs",
+      "require": "./dist/modules/order.js"
     },
     "./orderItem": {
-      "import": "./modules/orderItem/index.mjs",
-      "require": "./modules/orderItem/index.js"
+      "types": "./dist/modules/orderItem.d.ts",
+      "import": "./dist/modules/orderItem.mjs",
+      "require": "./dist/modules/orderItem.js"
     },
     "./product": {
-      "import": "./modules/product/index.mjs",
-      "require": "./modules/product/index.js"
+      "types": "./dist/modules/product.d.ts",
+      "import": "./dist/modules/product.mjs",
+      "require": "./dist/modules/product.js"
     },
     "./store": {
-      "import": "./modules/store/index.mjs",
-      "require": "./modules/store/index.js"
+      "types": "./dist/modules/store.d.ts",
+      "import": "./dist/modules/store.mjs",
+      "require": "./dist/modules/store.js"
     },
     "./subscription": {
-      "import": "./modules/subscription/index.mjs",
-      "require": "./modules/subscription/index.js"
+      "types": "./dist/modules/subscription.d.ts",
+      "import": "./dist/modules/subscription.mjs",
+      "require": "./dist/modules/subscription.js"
     },
     "./subscriptionInvoice": {
-      "import": "./modules/subscriptionInvoice/index.mjs",
-      "require": "./modules/subscriptionInvoice/index.js"
-    },
-    "./subscriptionItem": {
-      "import": "./modules/subscriptionItem/index.mjs",
-      "require": "./modules/subscriptionItem/index.js"
+      "types": "./dist/modules/subscriptionInvoice.d.ts",
+      "import": "./dist/modules/subscriptionInvoice.mjs",
+      "require": "./dist/modules/subscriptionInvoice.js"
     },
     "./types": {
-      "import": "./types.mjs",
-      "require": "./types.js"
+      "types":"./dist/types.d.ts",
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.js"
     },
     "./user": {
-      "import": "./modules/user/index.mjs",
-      "require": "./modules/user/index.js"
+      "types": "./dist/modules/user.d.ts",
+      "import": "./dist/modules/user.mjs",
+      "require": "./dist/modules/user.js"
     },
     "./variant": {
-      "import": "./modules/variant/index.mjs",
-      "require": "./modules/variant/index.js"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "checkout": [
-        "./modules/checkout/index.d.ts"
-      ],
-      "customer": [
-        "./modules/customer/index.d.ts"
-      ],
-      "client": [
-        "./client/index.d.ts"
-      ],
-      "discount": [
-        "./modules/discount/index.d.ts"
-      ],
-      "file": [
-        "./modules/file/index.d.ts"
-      ],
-      "licenseKey": [
-        "./modules/licenseKey/index.d.ts"
-      ],
-      "licenseKeyInstance": [
-        "./modules/licenseKeyInstance/index.d.ts"
-      ],
-      "modules": [
-        "./modules/index.d.ts"
-      ],
-      "order": [
-        "./modules/order/index.d.ts"
-      ],
-      "orderItem": [
-        "./modules/orderItem/index.d.ts"
-      ],
-      "product": [
-        "./modules/product/index.d.ts"
-      ],
-      "store": [
-        "./modules/store/index.d.ts"
-      ],
-      "subscription": [
-        "./modules/subscription/index.d.ts"
-      ],
-      "subscriptionInvoice": [
-        "./modules/subscriptionInvoice/index.d.ts"
-      ],
-      "types": [
-        "./types.d.ts"
-      ],
-      "user": [
-        "./modules/user/index.d.ts"
-      ],
-      "variant": [
-        "./modules/variant/index.d.ts"
-      ]
+      "types": "./dist/modules/variant.d.ts",
+      "import": "./dist/modules/variant.mjs",
+      "require": "./dist/modules/variant.js"
     }
   },
   "scripts": {
